@@ -1,5 +1,5 @@
 const CACHE = 'reiseklar-v1';
-const ASSETS = ['/', '/index.html', '/manifest.json'];
+const ASSETS = ['/reise-klar/', '/reise-klar/index.html', '/reise-klar/manifest.json', '/reise-klar/icon-192.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
@@ -7,6 +7,6 @@ self.addEventListener('install', e => {
 
 self.addEventListener('fetch', e => {
   e.respondWith(
-    caches.match(e.request).then(r => r || fetch(e.request).catch(() => caches.match('/index.html')))
+    caches.match(e.request).then(r => r || fetch(e.request).catch(() => caches.match('/reise-klar/index.html')))
   );
 });
