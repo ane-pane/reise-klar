@@ -1,6 +1,6 @@
 {
-  "name": "Reise Klar",
-  "short_name": "Reise Klar",
+  "name": "Reiseklar",
+  "short_name": "Reiseklar",
   "description": "Pakkeliste og reiseplanleggar",
   "start_url": "/reise-klar/",
   "scope": "/reise-klar/",
